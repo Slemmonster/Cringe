@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cringe.MapApp"
+             BackgroundImageSource="MapBackground"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HeightRequest="100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="85"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="GnomeChild" Grid.Column="0" HorizontalOptions="Start"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="GnomeChild" Grid.Row="0" Grid.Column="4" HorizontalOptions="Center"></Image>
+                <Image Source="GnomeChild" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"></Image>
+                <Image Source="GnomeChild" Grid.Row="2" Grid.Column="3" HorizontalOptions="Center"></Image>
+                <Image Source="GnomeChild" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center"></Image>
+                <Image Source="GnomeChild" Grid.Row="4" Grid.Column="4" HorizontalOptions="Center"></Image>
+                <ImageButton Source="GnomeChild" Grid.Row="5" HorizontalOptions="Start" Clicked="BackMenuClick"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

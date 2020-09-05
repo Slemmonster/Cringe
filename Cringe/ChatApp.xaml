@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cringe.ChatApp"
+             BackgroundImageSource="ChatBackground"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Grid HeightRequest="240">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="GnomeChild" Grid.Column="0" VerticalOptions="Start"/>
+                <Image Source="GnomeChild" Grid.Column="1" HorizontalOptions="Center"></Image>
+                <Label Text="Racist Nome" Grid.Column="1" Grid.Row="1"  HorizontalOptions="Center" FontSize="32" FontAttributes="Bold"></Label>
+            </Grid>
+            <Grid HeightRequest="260" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65"/>
+                    <RowDefinition Height="65"/>
+                    <RowDefinition Height="65"/>
+                    <RowDefinition Height="65"/>
+                </Grid.RowDefinitions>
+                
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="GnomeChild" Grid.Column="0" HorizontalOptions="Start"></Image>
+                    <Label Text="Sit kid" Grid.Column="1" BackgroundColor="black" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Padding="0, 10, 0, 10"></Label>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="???" Grid.Column="1" BackgroundColor="black" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Padding="0, 10, 0, 10"></Label>
+                    <Image Source="GnomeChild" Grid.Column="2" HorizontalOptions="Start"></Image>
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="GnomeChild" Grid.Column="0" HorizontalOptions="Start"></Image>
+                    <Label Text="Sad" Grid.Column="1" BackgroundColor="black" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Padding="0, 10, 0, 10"></Label>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="65"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text=":(" Grid.Column="1" BackgroundColor="black" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Padding="0, 10, 0, 10"></Label>
+                    <Image Source="GnomeChild" Grid.Column="2" HorizontalOptions="Start"></Image>
+                </Grid>
+
+            </Grid>
+            <Grid HeightRequest="100" Margin="0, 30, 0, 30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="85"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <ImageButton Source="GnomeChild" Grid.Column="0" HorizontalOptions="Start" Clicked="BackMenuClick"/>
+                <Image Source="GnomeChild" Grid.Column="2" Grid.Row="0"></Image>
+                <Image Source="GnomeChild" Grid.Column="3" Grid.Row="0"></Image>
+            </Grid>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
