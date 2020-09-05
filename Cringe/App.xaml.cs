@@ -12,6 +12,7 @@ namespace Cringe
         ContentPage ChatApp;
         ContentPage ShopApp;
         ContentPage MapApp;
+        NavigationPage HomePage;
 
         public App()
         {
