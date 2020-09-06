@@ -15,7 +15,7 @@
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                <ImageButton Source="GnomeChild" Grid.Column="0" HorizontalOptions="Start"/>
+                <ImageButton Source="GnomeChild" Grid.Column="0" HorizontalOptions="Start" Clicked="OpenSideMenuClick"/>
                 <Image Source="GnomeChild" Grid.Column="1" Grid.Row="0"></Image>
                 <Label Text="37" FontSize="60" FontAttributes="Bold" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
             </Grid>

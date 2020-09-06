@@ -25,9 +25,18 @@ namespace Cringe
             await DisplayAlert("Result", "Answer: " + answer, "OK");
         }
 
+        private void PopulateMenu(SideMenu sideMenu)
+        {
+            sideMenu.SetTitle("Shop App Menu");
+        }
+
         private async void OpenSideMenuClick(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(app.getSideMenu());
+            SideMenu sideMenu = app.getSideMenu();
+
+            PopulateMenu(sideMenu);
+
+            await Navigation.PushModalAsync(sideMenu);
         }
 
         private async void openDate(object sender, EventArgs e)

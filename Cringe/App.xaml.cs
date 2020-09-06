@@ -12,7 +12,7 @@ namespace Cringe
         ContentPage ChatApp;
         ContentPage ShopApp;
         ContentPage MapApp;
-        ContentPage SideMenu;
+        SideMenu SideMenu;
         NavigationPage HomePage;
 
         public App()
@@ -52,7 +52,7 @@ namespace Cringe
             return MapApp;
         }
 
-        public ContentPage getSideMenu()
+        public SideMenu getSideMenu()
         {
             return SideMenu;
         }

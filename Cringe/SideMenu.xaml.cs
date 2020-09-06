@@ -31,11 +31,16 @@ namespace Cringe
             await Navigation.PopModalAsync();
         }
 
+        public void SetTitle(string title)
+        {
+            menuLabel.Text = title;
+        }
+
         private void ChangeThings(object sender, EventArgs e)
         {
             Color[] colors = new Color[] { Color.Green, Color.Red, Color.Orange, Color.Pink, Color.Blue, Color.OrangeRed, Color.DarkOrange, Color.SpringGreen, Color.MintCream};
             Random rnd = new Random();
-            menuLabel.BackgroundColor = colors[rnd.Next(0, colors.Length)];
+            titleBackground.BackgroundColor = colors[rnd.Next(0, colors.Length)];
         }
     }
 }

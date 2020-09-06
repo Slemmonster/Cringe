@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Cringe.SideMenu">
+             x:Class="Cringe.SideMenu"
+             BackgroundColor="#50000000">
     <ContentPage.Content>
-        <StackLayout>
-            <Grid x:Name="TitleGrid">
+        <StackLayout BackgroundColor="#">
+            <Grid x:Name="TitleGrid" WidthRequest="350">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="90"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                <ImageButton Source="GnomeChild" Clicked="MenuCloseClicked"/>
-                <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="menuLabel">
-                    <Label Text="This is a menu" TextColor="Black" Padding="20"  HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
-                </StackLayout>
+                <BoxView Color="#FF3399" Grid.Column="0" Grid.ColumnSpan="3" x:Name="titleBackground"/>
+                <ImageButton Source="GnomeChild" Clicked="MenuCloseClicked" VerticalOptions="CenterAndExpand"/>
+                <Label Text="This is a menu" TextColor="Black" Padding="20"  HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold" x:Name="menuLabel" Grid.Column="1"/>
                 <ImageButton Source="GnomeChild" Grid.Column="2" Clicked="ChangeThings"/>
             </Grid>
         </StackLayout>

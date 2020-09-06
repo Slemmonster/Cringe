@@ -23,5 +23,19 @@ namespace Cringe
         {
             await Navigation.PopAsync();
         }
+
+        private void PopulateMenu(SideMenu sideMenu)
+        {
+            sideMenu.SetTitle("Shop App Menu");
+        }
+
+        private async void OpenSideMenuClick(object sender, EventArgs e)
+        {
+            SideMenu sideMenu = app.getSideMenu();
+
+            PopulateMenu(sideMenu);
+
+            await Navigation.PushModalAsync(sideMenu);
+        }
     }
 }
