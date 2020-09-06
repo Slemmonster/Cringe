@@ -28,6 +28,9 @@
     <Compile Update="MapApp.xaml.cs">
       <DependentUpon>MapApp.xaml</DependentUpon>
     </Compile>
+    <Compile Update="SideMenu.xaml.cs">
+      <DependentUpon>SideMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Update="ShopApp.xaml.cs">
       <DependentUpon>ShopApp.xaml</DependentUpon>
     </Compile>
@@ -47,6 +50,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="MapApp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SideMenu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ShopApp.xaml">

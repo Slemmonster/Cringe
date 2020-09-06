@@ -25,9 +25,9 @@ namespace Cringe
             await DisplayAlert("Result", "Answer: " + answer, "OK");
         }
 
-        private async void MenuImageClick(object sender, EventArgs e)
+        private async void OpenSideMenuClick(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(app.getSideMenu());
         }
 
         private async void openDate(object sender, EventArgs e)

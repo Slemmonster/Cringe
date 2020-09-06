@@ -12,6 +12,7 @@ namespace Cringe
         ContentPage ChatApp;
         ContentPage ShopApp;
         ContentPage MapApp;
+        ContentPage SideMenu;
         NavigationPage HomePage;
 
         public App()
@@ -23,6 +24,7 @@ namespace Cringe
             ChatApp = new ChatApp(this);
             ShopApp = new ShopApp(this);
             MapApp = new MapApp(this);
+            SideMenu = new SideMenu(this);
         }
 
         public Page getMain()
@@ -48,6 +50,11 @@ namespace Cringe
         public ContentPage getMapApp()
         {
             return MapApp;
+        }
+
+        public ContentPage getSideMenu()
+        {
+            return SideMenu;
         }
 
         protected override void OnStart()
